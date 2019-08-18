@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <!-- <div class="header__menu-icon">
+                <img src="./img/menu.png" alt="icon" class="menu-icon">
+            </div> -->
+            <div class="header__logo">
+                <button class="menu-icon__button">
+                    <img src="./img/menu.png" alt="icon" class="menu-icon">
+                </button>
+                <img src="https://www.digginet.com/wp-content/uploads/2016/02/icon_based_logo.png" alt="" class="logo">
+            </div>
+            <nav class="header__nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#about-us" class="nav-list__link">О нас</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Услуги</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Акция</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section-general section">
+            <div class="section-general__top-container">
+                <h1 class="top-container__title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus,
+                    asperiores. Repellat officia quas quod culpa, molestiae in maxime quos officiis.</h1>
+            </div>
+            <div class="section-general__bottom_container">
+                <div class="bottom_container__text">
+                    <h4 class="bottom_container__title">Lorem, ipsum dolor.</h4>
+                    <p class="bottom_container__descr">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Obcaecati,
+                        esse!
+                    </p>
+                </div>
+                <button class="bottom_container__button" id="js-button-consult">Получить консультацию</button>
+            </div>
+        </section>
+        <section class="section-about-us section">
+            <div class="section-about-us__top-container">
+                <h2 class="top-container__title"><a name="about-us">О нас</a></h2>
+            </div>
+            <div class="section-about-us__content-container">
+                <div class="content-container__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est atque
+                    nostrum mollitia veritatis laboriosam, pariatur maxime iste dolore quo repellat aspernatur, ab
+                    excepturi vero consequuntur fuga? Unde non sit porro autem, incidunt nesciunt omnis voluptate, saepe
+                    ipsam quo suscipit sed! Perferendis autem quam, dignissimos veniam magnam vel, natus sunt
+                    consequuntur doloremque iure dolorum, odio ipsa quaerat fuga provident beatae distinctio.
+                </div>
+                <div class="content-container__video">
+                    <img src="./img/play-button.png" alt="" class="video__logo" id="js-button-video">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="popup_form popup_form-consult hidden">
+        <label for="form_name">Имя</label>
+        <input type="text" class="form_name" id="form_name">
+        <label for="form_phone">Телефон</label>
+        <input type="text" class="form_phone" id="form_phone">
+        <button class="form_send">Отправить</button>
+        <button class="form_close">Закрыть</button>
+    </div>
+    <div class="popup_form popup_form-video hidden">
+        <iframe width="280" height="120" src="https://www.youtube.com/embed/AkRSbdDtRt8" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button class="form_close">Закрыть</button>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
